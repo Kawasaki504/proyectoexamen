@@ -1,0 +1,1086 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #340032, #610069);
+    color: white;
+}
+h2 {
+    color: #CC5500;
+}
+
+/* Login */
+.login-container {
+    width: 320px;
+    margin: 100px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Header y Logo */
+header {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center;
+    background: #220033;
+    color: #ffcc00;
+    padding: 20px;
+}
+
+header img {
+    height: 60px; /* Tamaño del logo */
+    margin-left: 20px; /* Espacio a la izquierda */
+}
+.login-container h2 {
+    color: #ffcc00;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: calc();
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ffd633;
+    box-shadow: 0 0 8px #ffcc00;
+}
+
+/* Menú */
+nav {
+    background: #220033;
+    padding: 15px;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Submenú desplegable */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #340032;
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Header y Footer */
+header, footer {
+    background: #220033;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Adaptabilidad */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: url("") no-repeat center center/cover;
+    animation: fade-in 2s ease-in-out;
+}
+.hero {
+    background: url('') no-repeat center center/cover;
+}
+
+/* Animación de entrada */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Sombra en el texto */
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 15px #ffcc00;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* Lista de imágenes con texto al lado */
+.image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+/* Lista de imágenes con texto a la izquierda */
+.image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Asegura que las imágenes estén alineadas a la derecha */
+.image-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-item img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .image-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-item img {
+        width: 200px;
+        margin-top: 10px;
+    }
+}
+
+
+/* Estilos de la línea de tiempo */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffcc00;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Líneas visuales */
+.event::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: -10px;
+    background: #ffcc00;
+}
+
+
+
+
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1a001a, #420042);
+    color: white;
+}
+
+/* Imágenes animadas */
+.animated-img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.animated-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Marquee */
+marquee {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Header y Footer */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #220033;
+    color: #ffcc00;
+    padding: 20px;
+}
+
+header img {
+    height: 60px;
+    margin-left: 20px;
+}
+
+/* Menú */
+nav {
+    background: #220033;
+    padding: 15px;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Submenú desplegable */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #340032;
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Contenido */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+table th {
+    background: #420042;
+    color: #ffcc00;
+}
+
+/* Adaptabilidad */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Diseño con imágenes al lado del texto */
+.section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section img {
+    width: 120px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Hover en la tabla */
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+table th {
+    background: #420042;
+    color: #ffcc00;
+}
+
+table td:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+
+/* Menú fijo */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(34, 0, 51, 0.9);
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Hero Section con imagen directa */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+h3 {
+    color: #000;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Sección con imagen */
+.image-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Tarjetas interactivas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Ajustes móviles */
+@media screen and (max-width: 768px) {
+    .image-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Lista de imágenes con texto a la izquierda */
+.image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Asegura que las imágenes estén alineadas a la derecha */
+.image-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-item img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Tarjetas interactivas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Línea de tiempo */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffcc00;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .image-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Modo oscuro */
+.dark-mode {
+    background: #0a0a0a;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Header oscuro */
+.dark-header {
+    background: #220011;
+    border-bottom: 3px solid #ff0000;
+}
+
+/* Texto con distorsión */
+.distortion p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Imagen con efecto de desplazamiento */
+.image-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-section img {
+    width: 10s0px;
+    border-radius: 10px;
+    filter: brightness(50%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.image-section img:hover {
+    filter: brightness(100%);
+}
+
+/* Línea de tiempo narrativa */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+    transition: transform 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .image-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* Tema fragmentado */
+.fractured-theme {
+    background: black;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Texto roto con revelación al hacer clic */
+.broken-text p {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.broken-text p:hover {
+    color: red;
+}
+
+.hidden-text {
+    display: none;
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Imagen con efecto de recuperación */
+.image-section img {
+    width: 100px;
+    max-height: 400px;
+    filter: blur(5px);
+    transition: filter 1s ease-in-out;
+}
+
+.image-section img:hover {
+    filter: blur(0px);
+}
+
+/* Sección con desplazamiento */
+.scroll-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scroll-item {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.scroll-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* Tema oscuro con efectos de luz */
+.symbolic-theme {
+    background: #0a0a0a;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Sección de símbolos con efecto de revelación */
+.symbol-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.symbol {
+    position: relative;
+    cursor: pointer;
+}
+
+.symbol img {
+    width: 50px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.symbol img:hover {
+    transform: scale(1.1);
+}
+
+.hidden-symbol {
+    display: none;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Línea de tiempo con símbolos */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: transform 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .symbol-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Tema histórico con efecto visual */
+.historical-theme {
+    background: #121212;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.collage-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collage-item {
+    position: relative;
+    width: 200px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.collage-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: filter 0.4s ease-in-out;
+}
+
+.collage-item:hover img {
+    filter: brightness(60%);
+}
+
+.hidden-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.collage-item:hover .hidden-text {
+    display: block;
+}
+
+/* Tarjetas comparativas */
+.comparison-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Línea de tiempo comparativa */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: transform 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .comparison-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Tema futurista con efecto de profundidad */
+.future-theme {
+    background: #141414;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Efecto de aparición para la barra de progreso */
+.progress-bar {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.progress {
+    background: linear-gradient(90deg, #ffcc00, #ffaa00);
+    padding: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Formulario con diseño limpio */
+.future-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+/* Estilos para los campos de entrada */
+.future-form input, .future-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ffcc00;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Botón con efecto dinámico */
+.future-form button {
+    padding: 12px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.future-form button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .future-form {
+        width: 90%;
+    }
+}
+
+
+
+
+/* Estilos del formulario */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Redes sociales */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: #ffaa00;
+}
